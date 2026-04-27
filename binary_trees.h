@@ -21,22 +21,14 @@ struct binary_tree_s
 
 typedef struct binary_tree_s binary_tree_t;
 
-/* 
- * Typedefs for different types of binary trees
- *
- * binary_tree_t: Generic binary tree (no specific rules)
- * bst_t: Binary Search Tree (values follow BST rules)
- * avl_t: AVL Tree (self-balancing binary search tree)
- * heap_t: Max Binary Heap (complete tree with heap property)
- *
- * Note: All of them use the same underlying structure (binary_tree_s)
- * but they differ in how nodes are organized and constrained.
- */
+/*Binary Search Tree*/
 typedef struct binary_tree_s bst_t;
+/*AVL Tree*/
 typedef struct binary_tree_s avl_t;
+/*Max Binary Heap*/
 typedef struct binary_tree_s heap_t;
 
 /* Task 0 */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
-#endif /* BINARY_TREES_H */
+#endif
