@@ -8,13 +8,8 @@
  */
 size_t binary_tree_nodes(const binary_tree_t *tree)
 {
-if (tree == NULL)
+if (!tree || (!tree->left && !tree->right))
 return (0);
 
-	/* If the node is a leaf, it doesn't count as a "node with children" */
-if (tree->left == NULL && tree->right == NULL)
-return (0);
-
-	/* Count the current node (1) plus results from left and right subtrees */
 return (1 + binary_tree_nodes(tree->left) + binary_tree_nodes(tree->right));
 }
