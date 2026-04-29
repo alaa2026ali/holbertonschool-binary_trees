@@ -5,9 +5,6 @@
  * @tree: pointer to the root node
  *
  * Return: height of the tree
- *
- * Description: Height is the number of edges on the longest path
- * from the node to a leaf.
  */
 size_t binary_tree_height(const binary_tree_t *tree)
 {
@@ -21,7 +18,7 @@ size_t binary_tree_height(const binary_tree_t *tree)
     right_height = binary_tree_height(tree->right);
 
     if (left_height > right_height)
-        return (left_height);
+        return (left_height + 1);
     else
-        return (right_height);
+        return (right_height + 1);
 }
