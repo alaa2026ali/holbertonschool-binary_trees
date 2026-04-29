@@ -8,15 +8,15 @@
  */
 int binary_tree_is_full(const binary_tree_t *tree)
 {
-if (!tree)
-return (0);
+	if (!tree)
+		return (0);
 
-/* If it's a leaf node, return 1 */
-if (!tree->left && !tree->right)
-return (1);
+	/* If it's a leaf node, return 1 */
+	if (!tree->left && !tree->right)
+		return (1);
 
-/* Use logical AND to check if both subtrees exist and are full */
-return (tree->left && tree->right &&
-binary_tree_is_full(tree->left) &&
-binary_tree_is_full(tree->right));
+	/* Use logical AND to check if both subtrees exist and are full */
+	return (tree->left && tree->right &&
+		binary_tree_is_full(tree->left) &&
+		binary_tree_is_full(tree->right));
 }
