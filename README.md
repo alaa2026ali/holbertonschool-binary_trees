@@ -66,16 +66,6 @@ betty-doc *.h
 ```
 
 ---
-
-## Authors
-
-This project was developed by:
-
-* **Alaa Aldwasari** 
-* **Alraddadi Muhannad**
-
----
-
 ## Concepts Covered
 - Binary Trees
 - Recursion
@@ -83,3 +73,10 @@ This project was developed by:
 - Height and Depth
 - Full and Perfect Trees
 - Node Relationships (sibling, uncle)
+---
+## Authors
+
+This project was developed by:
+
+* **Alaa Aldwasari** 
+* **Alraddadi Muhannad**
