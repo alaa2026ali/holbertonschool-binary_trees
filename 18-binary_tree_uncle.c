@@ -8,19 +8,13 @@
  */
 binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 {
-	/* A node cannot have an uncle if it is NULL or has no grandparent */
 	if (node == NULL || node->parent == NULL || node->parent->parent == NULL)
 		return (NULL);
 
-	/* 
-	 * The uncle of a node is the sibling of its parent.
-	 * If the parent is the left child of the grandparent, the uncle is the right child.
-	 */
+	/* If parent is the left child, the uncle is the right child */
 	if (node->parent->parent->left == node->parent)
 		return (node->parent->parent->right);
 
-	/*
-	 * If the parent is the right child of the grandparent, the uncle is the left child.
-	 */
+	/* If parent is the right child, the uncle is the left child */
 	return (node->parent->parent->left);
 }
