@@ -60,6 +60,11 @@ size_t binary_tree_nodes(const binary_tree_t *tree);
 int binary_tree_balance(const binary_tree_t *tree);
 /* Task 15 */
 int binary_tree_is_full(const binary_tree_t *tree);
+/* Task 16*/
 int binary_tree_is_perfect(const binary_tree_t *tree);
+/* Task 17*/
+binary_tree_t *binary_tree_sibling(binary_tree_t *node);
+/* Task 18*/
+binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 
 #endif
