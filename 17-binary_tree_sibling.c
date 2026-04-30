@@ -13,7 +13,7 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 	if (!node || !node->parent)
 		return (NULL);
 
-	/* 
+	/*
 	 * If the current node is the left child, return the right child.
 	 * Otherwise, return the left child.
 	 */
