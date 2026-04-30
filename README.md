@@ -1,28 +1,85 @@
 # Binary Trees Project
 
-This project focuses on implementing binary trees in C.
+## Description
+This project implements a set of functions to manipulate binary trees in C. It covers tree creation, traversal, and different operations such as: height, depth, size, leaves, nodes, balance, full trees, perfect trees, sibling, and uncle.
 
-## Data Structure
+---
 
-We use a basic binary tree node defined as:
+## Requirements
+- Operating System: Ubuntu 20.04 LTS
+- Compiler: GCC
+- Language: C (GNU89 standard)
+- Style: Betty style compliance
+- No global variables allowed
+- Maximum 5 functions per file
 
-- integer value (n)
-- pointer to parent node
-- pointer to left child
-- pointer to right child
+---
 
-We also typedef the structure for:
-- binary tree
-- binary search tree
-- AVL tree
-- Max binary heap
-
-## Files
-
-- binary_trees.h → header file containing structures and prototypes
-- 0-binary_tree_node.c → function to create a new node
-
-## Compilation
-
+## Installation
+Clone the repository:
 ```bash
-gcc -Wall -Wextra -Werror -pedantic -std=gnu89 *.c -o binary_tree
+git clone alaa2026ali/holbertonschool-binary_trees
+```
+
+Go to project directory:
+```bash
+cd holbertonschool-binary_trees
+```
+
+---
+
+## Examples
+
+**Create a node**
+```c
+binary_tree_t *root = binary_tree_node(NULL, 98);
+```
+
+**Check perfect tree**
+```c
+binary_tree_is_perfect(root);
+```
+
+**Find uncle**
+```c
+binary_tree_uncle(root->left->left);
+```
+
+---
+
+## Testing
+
+**Compile test file:**
+```bash
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c main.c -o test
+```
+
+**Run program:**
+```bash
+./test
+```
+
+**Betty style check:**
+```bash
+betty-style *.c
+betty-doc *.h
+```
+
+---
+
+## Authors
+
+This project was developed by:
+
+* **Alaa Aldwasari** 
+* **Alraddadi Muhannad**
+
+---
+
+## Concepts Covered
+- Binary Trees
+- Recursion
+- Tree Traversal
+- Height and Depth
+- Full and Perfect Trees
+- Node Relationships (sibling, uncle)
